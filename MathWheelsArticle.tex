@@ -85,13 +85,18 @@
 	Thus, we decide to define the requirement for a wheel to "roll properly" to have a rotation axis constant.
 	
 	Let us define this mathematically:
-	We take a general wheel shape given by its (positive) radius for all angles $r(\alpha) \in \R^+ \quad \alpha \in \left[ 0, 2\pi \right[$\footnote{Ideally, we want $r$ smooth and such that $\lim\limits_{\alpha \to 2\pi} r(\alpha)=r(0)$.}.
-	The shape of the wheel is then define by the closed curve $\{ (r(\alpha)\cos(\alpha),r(\alpha)\sin(\alpha)) \mid \alpha \in \left[ 0,2\pi \right] \}$.
+	We take a general wheel shape given by its (positive) radius for all angles $r(\alpha) \in \R^+ \quad \alpha \in \left[ 0, 2\pi \right[$.
+	The shape of the wheel is then define by the closed curve\footnote{Assuming $r$ is smooth and such that $\lim\limits_{\alpha \to 2\pi} r(\alpha)=r(0)$.} $\{ (r(\alpha)\cos(\alpha),r(\alpha)\sin(\alpha)) \mid \alpha \in \left[ 0,2\pi \right] \}$.
 	We want to find the curve of the road $\{ (x,h(x)) \mid x \in \R \}$ such that the axis of the wheel has a constant height.
 	
 	We will take as a convention that the wheel is placed vertically at origin (i.e. at $x=0$) with angle $\alpha=0$.
 	So at the beginning, the wheel is placed as follows:
 	
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[height=2.7cm]{initial_position}
+		\label{fig:InitialPosition}
+	\end{figure}
 	% insert image of wheel placed at 0 here
 	
 	The height of the wheel axis is then $C = h(0)+r(0)$, and we want to keep it constant, i.e. we have the wheel rotation condition:
