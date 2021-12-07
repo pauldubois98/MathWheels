@@ -97,7 +97,6 @@
 		\includegraphics[height=2.7cm]{initial_position}
 		\label{fig:InitialPosition}
 	\end{figure}
-	% insert image of wheel placed at 0 here
 	
 	The height of the wheel axis is then $C = h(0)+r(0)$, and we want to keep it constant, i.e. we have the wheel rotation condition:
 	
@@ -111,6 +110,30 @@
 	
 	
 	\section{The Wheels Equations}
+	Relating $x$ and $\alpha$ is actually the hard part.
+	We position our self at angle $\alpha$ corresponding to advance of $x$; and we look at the infinitesimal variation of the road's curve:
+	
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[height=2.7cm]{infinitesimal_scheme}
+		\label{fig:infinitesimal_scheme}
+	\end{figure}
+
+%	Looking at the problem with intrinsic coordinates, we have:
+%	\begin{equation}
+%		\tag{Wheel Equations}
+%		\left\lbrace 
+%		\begin{split}
+%			r(\alpha)+h(x)=C\\
+%			\tan(a(\alpha)) = \frac{h(x+dx)-h(x)}{dx}\\
+%			r(\alpha+d\alpha)+h(x+dx)=C
+%		\end{split}
+%		\right. 
+%		\label{eqn:WheelEquations}
+%	\end{equation}
+
+
+
 	\subsection{Solving the Wheels Equations}
 	
 	\section{Collisions}
